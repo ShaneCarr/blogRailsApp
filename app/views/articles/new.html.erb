@@ -1,4 +1,18 @@
-<%= form_with scope: :article, url: articles_path, local: true do |form| %>
+<!--ll
+
+2.3 Path and URL Helpers
+
+Creating a resourceful route will also expose a number of helpers to the controllers in your application. In the case of resources :photos:
+
+    photos_path returns /photos
+    new_photo_path returns /photos/new
+    edit_photo_path(:id) returns /photos/:id/edit (for instance, edit_photo_path(10) returns /photos/10/edit)
+    photo_path(:id) returns /photos/:id (for instance, photo_path(10) returns /photos/10)
+
+
+-->
+
+articles_path, local: true do |form| %>
 
   <% if @article.errors.any? %>
     <div id="error_explanation">
